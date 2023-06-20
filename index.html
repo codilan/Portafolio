@@ -1,48 +1,170 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html>
 <head>
-  <title>Mi Página Web</title>
+  <title>Mi Portafolio Personal</title>
+  <style>
+    /* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    }
+
+    header {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    }
+
+    h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    }
+
+    nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+
+    nav ul li {
+    display: inline;
+    margin-right: 10px;
+    }
+
+    nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    }
+
+    section {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    }
+
+    h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    }
+
+    p {
+    line-height: 1.6;
+    }
+
+    ul {
+    padding-left: 20px;
+    }
+
+    a {
+    color: #007bff;
+    }
+
+    footer {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    }
+
+    /* Estilos específicos para el contenido */
+    #inicio {
+    text-align: center;
+    background-color: #e8f7ff; /* Cambia el color de fondo según tus preferencias */
+    }
+         img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+    #biografia {
+    border: 1px solid #333;
+    background-color: #A8A1C7; /* Cambia el color de fondo según tus preferencias */
+    }
+
+    #proyectos {
+        border: 1px solid #333;
+    background-color: #98d7a5;
+    }
+
+    #habilidades {
+        border: 1px solid #333;
+    background-color: #FFF0A5; /* Cambia el color de fondo según tus preferencias */
+    }
+
+    #contacto {
+        border: 1px solid #333;
+    background-color: #EEB868; /* Cambia el color de fondo según tus preferencias */
+    }
+
+    #contacto ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    padding-left: 0;
+    }
+
+    #contacto li {
+    list-style-type: none;
+    }
+
+    @media (max-width: 768px) {
+    #contacto ul {
+        grid-template-columns: 1fr;
+    }
+    }
+
+  </style>
 </head>
 <body>
   <header>
-    <h1>Bienvenido a Mi Página Web</h1>
+    <h1>I'm Dylan Ñungo</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#biografia">Biografía</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#acerca">Acerca de</a></li>
-      <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-  </nav>
-
   <section id="inicio">
-    <h2>Inicio</h2>
-    <p>Bienvenido a mi página web. ¡Aquí encontrarás información interesante!</p>
+    #inicio 
+    <h2>¡Bienvenido/a a mi Portafolio Personal!</h2>
+    <img src="https://images.unsplash.com/photo-1505238680356-667803448bb6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt=""> 
+</section>
+
+  <section id="biografia">
+    <h2>Biografía</h2>
+    <p>Soy Dylan Steven Ñungo, un apasionado aprendiz en programación y seguridad informática. Deseo destacarme en ambas áreas y contribuir a un mundo digital más seguro.</p>
   </section>
 
-  <section id="acerca">
-    <h2>Acerca de</h2>
-    <p>Soy un apasionado del desarrollo web y me encanta crear sitios web increíbles.</p>
+  <section id="proyectos">
+    <h2>Proyectos</h2>
+    <p>deseo crear mi tienda virtual, ser uno de los mejores en el campo de programacion y poder mejorar mi calidad de vida </p>
   </section>
 
-  <section id="servicios">
-    <h2>Servicios</h2>
-    <ul>
-      <li>Diseño web</li>
-      <li>Desarrollo frontend y backend</li>
-      <li>Optimización para motores de búsqueda</li>
-    </ul>
+  <section id="habilidades">
+    <h2>Habilidades</h2>
+    <p> soy una persona muy dedicada,tengo buena presentacion y excelentes modales</p>
   </section>
 
   <section id="contacto">
     <h2>Contacto</h2>
-    <p>Puedes comunicarte conmigo a través del siguiente correo electrónico: info@example.com</p>
+    <p>Puedes comunicarte conmigo a través de los siguientes canales:</p>
+    <ul>
+      <li>Email: godilanfig@gmail.com</li>
+      <li>Teléfono: +573015914032</li>
+      <li>GitHub: <a href="https://github.com/codilan/mi-primera-pagina-web" target="_blank">github.com/tuusuario</a></li>
+    </ul>
   </section>
 
   <footer>
-    <p>Derechos de autor &copy; 2023 Mi Página Web</p>
+    <!-- Puedes agregar información adicional en el pie de página si lo deseas -->
   </footer>
 </body>
 </html>
